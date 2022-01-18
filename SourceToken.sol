@@ -684,7 +684,7 @@ interface IPancakeswapV2Router02 is IPancakeswapV2Router01 {
 }
 
 
-contract Source is Context,IBEP20,Ownable {
+contract SourceToken is Context,IBEP20,Ownable {
     using Address for address;
     using SafeMath for uint256;
 
@@ -700,12 +700,12 @@ contract Source is Context,IBEP20,Ownable {
     address private _charityWallet;
    
     uint256 private constant MAX = ~uint256(0);
-    uint256 private constant _tTotal = 1000000000000000 * 10**9;
+    uint256 private constant _tTotal = 20000000000 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private constant _name = "Source";
-    string private constant _symbol = "SCX";
+    string private constant _name = "Source Token";
+    string private constant _symbol = "SRCX";
     uint8 private constant _decimals = 9;
     
     uint256 public _taxFee = 3;
