@@ -1,12 +1,13 @@
 // SPDX-License-Identifier: Unlicensed
 
 /*
-   Source Tokenomics
-   totalSupply = 1,000,000,000,000,000
-   233,000,000,000,000 Burn at launch
+   Source Token(SRCX) Tokenomics   
+   Max Supply = 500,000,000   
+   Supply Burned at Launch = 200,000,000    
+   Total Supply After Burn = 300,000,000   
+   6%  fee is taken on each transaction for the DCLP (Dynamic Compounding Liquidity Pool)   
    3% tx fee redistributed to token holders on each transaction.
-   4% liquidity fee is taken on each transaction and locked in the liquidity pool
-   3%  fee is taken on each transaction for the DCLP (Dynamic Compounding Liquidity Pool)
+   1% liquidity fee is taken on each transaction and locked in the liquidity pool
    
 */
 
