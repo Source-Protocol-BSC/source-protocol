@@ -700,7 +700,7 @@ contract SourceToken is Context,IBEP20,Ownable {
     address private _charityWallet;
    
     uint256 private constant MAX = ~uint256(0);
-    uint256 private constant _tTotal = 20000000000 * 10**9;
+    uint256 private constant _tTotal = 500000000 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
@@ -711,10 +711,10 @@ contract SourceToken is Context,IBEP20,Ownable {
     uint256 public _taxFee = 3;
     uint256 private _previousTaxFee = _taxFee;
     
-    uint256 public _liquidityFee = 4;
+    uint256 public _liquidityFee = 1;
     uint256 private _previousLiquidityFee = _liquidityFee;
 
-    uint256 public _charityFee = 3;
+    uint256 public _charityFee = 6;
     uint256 private _previousCharityFee = _charityFee;
 
     IPancakeswapV2Router02 public immutable pancakeswapV2Router;
@@ -724,7 +724,7 @@ contract SourceToken is Context,IBEP20,Ownable {
     bool public swapAndLiquifyEnabled = true;
     
     uint256 public _maxTxAmount = 500000 * 10**6 * 10**9;
-    uint256 private constant numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
+    uint256 private constant numTokensSellToAddToLiquidity = 2500 * 10**6 * 10**9;
     address public constant BURN_ADDRESS = 0x000000000000000000000000000000000000dEaD;
     
     
